@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de JavaScript</title>
+  </head>
+  <body>
+    <!-- Título da página -->
+    <h1 id="titulo">Bem-vindo ao meu site!</h1>
+
+    <!-- Botão para alterar o título -->
+    <button id="botao">Clique para mudar o título</button>
+
+    <!-- Imagem com evento de mouse -->
+    <img
+      id="imagem"
+      src="..\img\gov01.png"
+      alt="Imagem de exemplo"
+      style="margin-top: 20px"
+    />
+
+    <script>
+      // Alterando o título ao clicar no botão
+      document.getElementById("botao").onclick = function () {
+        document.getElementById("titulo").innerHTML = "Você clicou no botão!";
+      };
+
+      // Mostrando um alerta quando passar o mouse sobre a imagem
+      document
+        .getElementById("imagem")
+        .addEventListener("mouseover", function () {
+          alert("Você passou o mouse sobre a imagem!");
+        });
+    </script>
+  </body>
+</html>
